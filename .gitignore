@@ -1,0 +1,6 @@
+*
+**/*
+
+!.gitignore
+!project.godot
+!*.txt
