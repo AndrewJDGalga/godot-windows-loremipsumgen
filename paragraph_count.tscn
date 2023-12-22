@@ -3,18 +3,20 @@
 [node name="paragraph_count" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 293.0
+offset_right = 260.0
 offset_bottom = 41.0
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_top = 4.0
+offset_right = 180.0
+offset_bottom = 28.0
 text = "Number of paragraphs"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="LineEdit" type="LineEdit" parent="."]
 layout_mode = 0
-offset_left = 191.0
-offset_top = 2.0
-offset_right = 258.063
-offset_bottom = 33.0
+offset_left = 190.0
+offset_right = 258.0
+offset_bottom = 32.0
 placeholder_text = "1"
