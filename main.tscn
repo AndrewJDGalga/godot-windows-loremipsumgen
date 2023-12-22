@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dw8qdkky4mpj"]
+[gd_scene load_steps=4 format=3 uid="uid://dw8qdkky4mpj"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_e27yh"]
+[ext_resource type="PackedScene" uid="uid://bjoucdi10ev3v" path="res://copy_button.tscn" id="2_ikyax"]
+[ext_resource type="PackedScene" uid="uid://ddgl8mjouyj4j" path="res://paragraph_count.tscn" id="3_3gaod"]
 
 [node name="main" type="Control"]
 layout_mode = 3
@@ -10,3 +12,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e27yh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 260.0
+offset_bottom = 100.0
+color = Color(0.258824, 0.258824, 0.258824, 1)
+
+[node name="copy_button" parent="." instance=ExtResource("2_ikyax")]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 55.0
+offset_right = 211.0
+offset_bottom = 86.0
+
+[node name="paragraph_count" parent="." instance=ExtResource("3_3gaod")]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 294.0
+offset_bottom = 43.0
