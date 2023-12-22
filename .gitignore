@@ -1,8 +1,10 @@
 *
 **/*
 
+!assets/
 !.gitignore
 !project.godot
 !*.txt
 !*.tscn
 !*.gd
+!board-forum-information-svgrepo-com.svg
