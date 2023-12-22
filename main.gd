@@ -13,9 +13,5 @@ func _ready():
 func copyToClipboard(text):
 	DisplayServer.clipboard_set(text)
 
-func onCopyPress():
-	pass
-
-
 func _on_copy_button_pressed():
 	pass # Replace with function body.
