@@ -4,10 +4,11 @@ var copyBtn = null
 var lorem = ""
 
 func _ready():
-	var file = FileAccess.open("res://sourcetext.txt", FileAccess.READ)
-	lorem = file.get_as_text()
 	copyBtn = $copy_button
-	copyToClipboard(lorem)
+	var file = await FileAccess.open("res://assets/sourcetext.txt", FileAccess.READ)
+	if file:
+		lorem = file.get_as_text()
+		copyToClipboard(lorem)
 
 func copyToClipboard(text):
 	DisplayServer.clipboard_set(text)

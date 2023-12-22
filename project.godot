@@ -21,6 +21,11 @@ window/size/viewport_width=260
 window/size/viewport_height=100
 window/stretch/mode="canvas_items"
 
+[filesystem]
+
+import/blender/enabled=false
+import/fbx/enabled=false
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
